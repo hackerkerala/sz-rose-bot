@@ -62,7 +62,7 @@ from DewmiBot.modules.helper_funcs.misc import paginate_modules
 from DewmiBot.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hey there!👋  My name is Rose ✨
+Hey there!👋  My name is DAKINI ✨
 
 I can manage your group with lots of useful features, feel free to add me to your group.
 """
@@ -78,10 +78,7 @@ HELP_STRINGS = f"""
 
 
 DONATE_STRING = """
-𝑯𝒆𝒚𝒂, 𝒈𝒍𝒂𝒅 𝒕𝒐 𝒉𝒆𝒂𝒓 𝒚𝒐𝒖 𝒘𝒂𝒏𝒕 𝒕𝒐 𝒅𝒐𝒏𝒂𝒕𝒆!
-𝒀𝒐𝒖 𝒄𝒂𝒏 𝒅𝒐𝒏𝒂𝒕𝒆 𝒕𝒐 𝒕𝒉𝒆 𝒐𝒓𝒊𝒈𝒊𝒏𝒂𝒍 𝒘𝒓𝒊𝒕𝒆𝒓'𝒔 𝒐𝒇 𝒕𝒉𝒆 𝑩𝒂𝒔𝒆 𝒄𝒐𝒅𝒆,
-𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝒕𝒉𝒆𝒎 [Youtube](https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA)
-"""
+𝑯𝒆𝒚𝒂, 𝒈𝒍𝒂𝒅 𝒕𝒐 𝒉𝒆𝒂𝒓 𝒚𝒐𝒖 𝒘𝒂𝒏𝒕 𝒕𝒐 𝒅𝒐𝒏𝒂𝒕𝒆!"""
 STICKERS = (
       "CAACAgUAAxkDAAJRk2EsmXHM9GX2AsHafVBSXmrsqJPeAAIRAwACHUmhVNYuprqSm_zGIAQ",
       "CAACAgUAAxkBAAJbomEwT4YK4MGcUjWGrI4EOnHeXQUbAAKwAgACPcJIVXi-ppqwxSowIAQ",
@@ -94,12 +91,12 @@ STICKERS = (
 BUTTONS = [
     [
         InlineKeyboardButton(
-            text="➕️ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕️", url="http://t.me/szrosebot?startgroup=true"),
+            text="➕️ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕️", url="http://t.me/dakini_chechi_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="📢 Bot updates ", url=f"https://t.me/sl_bot_zone"),
+        InlineKeyboardButton(text="📢 Owner ", url=f"https://t.me/i_am_albin_praveen"),
         InlineKeyboardButton(
-            text="Repo 📦", url=f"https://github.com/youtubeslgeekshow"
+            text="Developer 📦", url=f"https://albinpraveen.ml"
         ),
     ],
     [
@@ -362,8 +359,8 @@ def DewmiBot_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f" @szrosebot🇱🇰 - A bot to manage your groups with additional features!"
-            f"\n\n Here's the basic help regarding use of @szrosebot🇱🇰."
+            text=f" @dakini_chechi_bot - A bot to manage your groups with additional features!"
+            f"\n\n Here's the basic help regarding use of @dakini_chechi_bot."
             f"\n\n Almost all modules usage defined in the help menu, checkout by sending `/help`"
             f"\n\n Report error/bugs click the Button ",
             parse_mode=ParseMode.MARKDOWN,
@@ -372,16 +369,10 @@ def DewmiBot_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Bᴜɢ'ꜱ🐞", url="t.me/slbotzone"
-                        ),
-                        InlineKeyboardButton(
-                            text="updates💁‍♀️", url="t.me/sl_bot_zone"
+                            text="Bᴜɢ'ꜱ🐞", url="t.me/i_am_albin_praveen"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(
-                            text="Donate 🤕", url="http://t.me/szrosebot?start=donate"
-                        ),
                         InlineKeyboardButton(
                             text="Inline search 🔎", switch_inline_query_current_chat=""
                         ),
@@ -403,7 +394,7 @@ def DewmiBot_about_callback(update, context):
             text=f"** Here's basic Help regarding* *How to use Me? **"
             f"\n\n Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n\n After adding promote me manually with full rights for faster experience.\n"
-            f"\n\n Than send `/admincache@szrosebot` in that chat to refresh admin list in My database.\n"
+            f"\n\n Than send `/admincache@dakini_chechi_bot` in that chat to refresh admin list in My database.\n"
             f"\n\n *All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -428,7 +419,7 @@ def DewmiBot_about_callback(update, context):
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
             text=f"*Let's make your group bot effective now*"
-            f"\nCongragulations, @szrosebot🇱🇰 now ready to manage your group."
+            f"\nCongragulations, @dakini_chechi_bot now ready to manage your group."
             f"\n\n*Admin Tools*"
             f"\nBasic Admin tools help you to protect and powerup your group."
             f"\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -455,18 +446,17 @@ def DewmiBot_about_callback(update, context):
         )
     elif query.data == "aboutmanu_spamprot":
         query.message.edit_text(
-            text="* @szrosebot🇱🇰 support chats*"
+            text="* @dakini_chechi_bot support chats*"
             "\nJoin Support Group/Channel",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Owener channel ", url="https://t.me/FreeNetSL"),
-                    InlineKeyboardButton(text="Owner group ", url="https://t.me/supunmasl"),
+                    InlineKeyboardButton(text="Owner ", url="https://t.me/i_am_albin_praveen"),
+                    InlineKeyboardButton(text="Developer ", url="https://albinpravee.ml"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/slbotzone"),
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/sl_bot_zone"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/i_am_albin_praveen"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="aboutmanu_howto"),
@@ -477,26 +467,18 @@ def DewmiBot_about_callback(update, context):
         )
     elif query.data == "aboutmanu_tac":
         query.message.edit_text(
-            text=f"* CREDITS  FOR @szrosebot🇱🇰  DEV *\n"
+            text=f"* CREDITS  FOR@dakini_chechi_bot  DEV *\n"
             f"\n Here you can find information about the bots I coded and the people who helped me create Rose"
-            f"\n Special credits [hirunaofficial](https://github.com/hirunaofficial/Telegram-Group-Management-Bot-DewmiBot)  & [Anikivictor](https://github.com/Damantha126/The-Anki-Vector)"
+            f"\n Special credits [ALBINPRAVEEN](https://albinpraveen.ml/portfolio) "
             f"\n Finally my special thanks to you for using this bot",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Dewmibot", url="https://t.me/sltechzoneofficial"),
+                    InlineKeyboardButton(text="dakini_chechi_bot", url="https://t.me/dakini_chechi_bot"),
                     InlineKeyboardButton(text="Aniki victor bot", url="https://t.me/ankivectorUpdates"),
                  ],
-                 [
-                    InlineKeyboardButton(text="Uvindu bro", url="https://t.me/UvinduBro"),
-                    InlineKeyboardButton(text="Stream_Music", url="https://t.me/SDBOTs_inifinity"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Daisyx bot", url="https://github.com/TeamDaisyX/Daisy-OLD"),
-                    InlineKeyboardButton(text="innexia bot", url="https://github.com/DarkCybers/innexia/blob/Sammy/innexiaBot"),
-                 ],   
                  [
                     InlineKeyboardButton(text="Back", callback_data="aboutmanu_howto"),
                  
@@ -530,7 +512,7 @@ def get_help(update, context):
             )
             return
         update.effective_message.reply_text(
-            "**Heya! I'am Rose - a group management bot here to help you manage your groups as effectively as possible**.\n\n**Contact me in PM to get the list of possible commands.**",
+            "**Heya! I'am DAKINI - a group management bot here to help you manage your groups as effectively as possible**.\n\n**Contact me in PM to get the list of possible commands.**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -541,8 +523,8 @@ def get_help(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Video play help",
-                            url="https://t.me/SL_bot_zone/507",
+                            text="Developer",
+                            url="https://albinpraveen.ml",
                         )
                     ],
                 ]
