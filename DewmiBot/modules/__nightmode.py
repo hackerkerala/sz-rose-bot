@@ -129,7 +129,7 @@ async def job_close():
     for pro in chats:
         try:
             await tbot.send_message(
-              int(pro.chat_id), "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By @szrosebot🇱🇰**"
+              int(pro.chat_id), "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By @dakinichechibot**"
             )
             await tbot(
             functions.messages.EditChatDefaultBannedRightsRequest(
@@ -151,7 +151,7 @@ async def job_open():
     for pro in chats:
         try:
             await tbot.send_message(
-              int(pro.chat_id), "06:00 Am, Group Is Opening.\n**Powered By @szrosebot🇱🇰**"
+              int(pro.chat_id), "06:00 Am, Group Is Opening.\n**Powered By @dakinichechibot**"
             )
             await tbot(
             functions.messages.EditChatDefaultBannedRightsRequest(
@@ -168,7 +168,7 @@ scheduler.start()
 
 
 __help__ = """
-@szrosebot🇱🇰
+@dakinichechibot
  ❍ /nightmode on/off
 **Note:** Night Mode chats get Automatically closed at 12pm(IST)
 and Automatically openned at 6am(IST) To Prevent Night Spams.
