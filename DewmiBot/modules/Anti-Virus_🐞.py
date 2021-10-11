@@ -109,7 +109,7 @@ __help__ = """
 @i_am_albin_praveen
  ❍ /scanit: Scan a file for virus (MAX SIZE = 3MB)
 """
-__mod_name__ = "virus"
+__mod_name__ = "virus🧨"
 
 
 
